@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --accentPrimary: #d4df3e;
+    --accentSecondary: #8a9211;
+    --textPrimary: #111111;
+    --textSecundary: #2e2e2e;
+    --backgroundPrimary: #eeeeee;
+    --backgroundSecondary: #dadada;
+    --boxBorder: #929292;
+    --boxShadow: #c3c2c2dc;
+    --overlay: #c3c2c2dc;
+}
+
+body {
+    background: #d4cc9f;
+}
+
+
+
+.produtos-container header button {
+    margin-right: 10px;
+}
+
+.produtos-container main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    place-items: center;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 270px;
+    height: 380px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 1px 0px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 230px;
+    height: 150px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.card-footer {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    column-gap: 10px;
+}
