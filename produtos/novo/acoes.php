@@ -1,5 +1,5 @@
 <?php
-require("../../database/conexaoBD.php");
+require("../../config/database.php");
 
 session_start();
 
@@ -188,7 +188,7 @@ switch ($_POST["acao"]) {
         $produtoId = $_POST["produtoId"];
 
         //procura a imagem no banco pelo id do produto
-        $sqlImagem = " SELECT imagem FROM tbl_produto WHERE id = $produtoId ";
+        $sqlImagem = " SELECT image FROM tbl_produto WHERE id = $produtoId ";
         $resultado = mysqli_query($conexao, $sqlImagem) or die(mysqli_error($conexao));
         $produto = mysqli_fetch_array($resultado);
         //deletamos a imagem pelo nome
@@ -204,7 +204,7 @@ switch ($_POST["acao"]) {
         }
 
         $_SESSION["mensagem"] = $mensagem;
-        header("location: /produtos/index.php");
+        header("location: /SAEP/produtos/index.php");
 
         break;
 
@@ -277,7 +277,7 @@ switch ($_POST["acao"]) {
 
         $_SESSION["mensagem"] = $mensagem;
 
-        header("location: /produtos/index.php");
+        header("location: /SAEP/produtos/index.php");
 
         break;
 }

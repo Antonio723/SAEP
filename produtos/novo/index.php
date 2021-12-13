@@ -1,5 +1,5 @@
 <?php
-require("../../database/conexaoBD.php");
+require("../../config/database.php");
   session_start();
   //Verifica se o usuáriio não está logado
   if (!isset($_SESSION["usuarioId"])) {
@@ -49,11 +49,11 @@ require("../../database/conexaoBD.php");
           </ul>
 
           <div class="input-group span2">
-            <label for="descricao">Descrição</label>
+            <label for="nome">Descrição</label>
             <input type="text" id="descricao" name="descricao" require>
           </div>
           <div class="input-group">
-            <label for="peso">Peso</label>
+            <label for="preco">Peso</label>
             <input type="number" min="0" id="peso" name="peso" require>
           </div>
           <div class="input-group">
@@ -103,9 +103,6 @@ require("../../database/conexaoBD.php");
       </main>
     </section>
   </div>
-  <footer>
-    SENAI 2021 - Todos os direitos reservados
-  </footer>
 </body>
 
 </html>

@@ -1,6 +1,8 @@
 .produtos-container header {
   padding: 10px 0px;
+  background-color: yellowgreen;
 }
+
 
 .produtos-container header button {
   margin-right: 10px;
